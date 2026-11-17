@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../css/style_zh.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-<title>把流程写成文档，然后确保它得到遵循 - 项目经理应该知道的 97 件事</title>
-<meta property="og:title" content="把流程写成文档，然后确保它得到遵循">
+<title>把流程写下来，然后确保大家照做 - 项目经理应该知道的 97 件事</title>
+<meta property="og:title" content="把流程写下来，然后确保大家照做">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://yoshi389111.github.io/kinokobooks/images/mngr97_en.png">
 <meta property="og:site_name" content="项目经理应该知道的 97 件事">
@@ -15,21 +15,21 @@
 <body>
 <article>
 <header>
-<h1>把流程写成文档，然后确保它得到遵循</h1>
+<h1>把流程写下来，然后确保大家照做</h1>
 
 <p><b>Monte Davis, MCSE</b>
 <i>Omaha, Nebraska, USA</i></p>
 </header>
 
-<p>在一次把电子邮件从一个平台迁移到另一个平台的过程中，一位女士结了个婚，就让我们的电子邮件系统彻底瘫痪了。</p>
+<p>在一次电子邮件平台迁移中，一位女士结了个婚，就让我们的邮件系统彻底瘫痪了。</p>
 <p>邮件的流转方式是这样的：</p>
 <ol>
-<li>新收到的电子邮件通过新邮件系统投递。</li>
-<li>如果新邮件系统能够投递，就把邮件投递给新系统中相应的用户。如果不能，邮件就被转发到旧邮件系统去投递。</li>
-<li>从仍在旧系统上的人<i>发给</i>仍在旧系统上的人的邮件，会被投递到相应的邮箱。但如果收件人已经迁移到了新系统，邮件就会通过为每个用户创建的“迁移”转发地址自动转发。</li>
+<li>新收到的邮件，先经过新邮件系统投递。</li>
+<li>如果新系统能投递，就把邮件送给新系统里的对应用户。如果不能，就把邮件转到旧系统去投递。</li>
+<li>从还在旧系统上的人<i>发给</i>还在旧系统上的人的邮件，会送到对应的邮箱。但如果收件人已经迁移到新系统，邮件就会通过为每个用户设定的“迁移”转发地址，自动转过去。</li>
 </ol>
-<p>有趣的部分来了。萨莉·辛格（Sally Single）迁移到新邮件系统后，她就有了两个电子邮件地址：sally.single@mycompany.com，以及一个转发地址 sally.single@migrate.mycompany.com。旧系统上的用户发给她的所有邮件，都会通过她的“迁移”转发地址自动转发到新邮件系统。</p>
-<p>萨莉结婚后，把名字从“Sally Single”改成了“Sally Married”，她的电子邮件地址也随之改变了。然而，在新系统中为萨莉更改邮件地址的人，忘了更改她在旧系统上的“迁移”转发地址。于是，萨莉最终拥有了以下这些地址：</p>
+<p>好笑的地方来了。萨莉·辛格（Sally Single）迁到新邮件系统后，有了两个地址：sally.single@mycompany.com，还有一个转发地址 sally.single@migrate.mycompany.com。旧系统用户发给她的所有邮件，都会通过这个“迁移”转发地址，自动转到新系统。</p>
+<p>萨莉结婚后，把名字从“Sally Single”改成了“Sally Married”，邮件地址也跟着改了。可是在新系统里帮她改地址的人，忘了改她在旧系统上的“迁移”转发地址。结果，萨莉有了下面这些地址：</p>
 <p><b>新系统</b></p>
 <ol>
 <li>sally.married@mycompany.com</li>
@@ -40,20 +40,20 @@
 <ol>
 <li>sally.married@mycompany.com</li>
 <li>sally.single@mycompany.com</li>
-<li><b>sally.single@migrate</b>.mycompany.com（<b>婚后被遗漏、未作更改的原始迁移条目</b>。）</li>
+<li><b>sally.single@migrate</b>.mycompany.com（<b>婚后被漏掉、没有改的原始迁移记录</b>。）</li>
 </ol>
-<p>当<i>仍在旧消息系统上的用户</i>给萨莉发邮件时，就形成了一个循环：</p>
+<p>当<i>还在旧系统上的用户</i>发邮件给萨莉时，就形成了一个循环：</p>
 <ol>
-<li>邮件在旧邮件系统上创建，发往 sally.single@mycompany.com；</li>
-<li>旧邮件系统检查萨莉的账户，发现转发设置为 sally.single@migrate.mycompany.com，于是转发邮件；</li>
-<li>新邮件系统查找电子邮件地址为 sally.single@migrate.mycompany.com 的人。它找不到，因为萨莉结婚时这个地址已被改名；</li>
-<li>新邮件系统把收件人不明的邮件转发回旧邮件系统；</li>
-<li>旧邮件系统知道要转发所有带有 @migrate.mycompany.com 地址的邮件，于是又把它们转发给新邮件服务器；</li>
-<li>如此周而复始。</li>
+<li>邮件在旧系统上写好，发到 sally.single@mycompany.com；</li>
+<li>旧系统检查萨莉的账户，发现转发设为 sally.single@migrate.mycompany.com，于是把邮件转出去；</li>
+<li>新系统去找地址是 sally.single@migrate.mycompany.com 的人，找不到，因为萨莉结婚时这个地址已经改名了；</li>
+<li>新系统把收件人不明的邮件退回旧系统；</li>
+<li>旧系统知道所有 @migrate.mycompany.com 的邮件都要转发，于是又转给新邮件服务器；</li>
+<li>就这样不停地重复下去。</li>
 </ol>
-<p>邮件每循环一次，公司的法律免责声明就会被附加到邮件末尾一次。法律免责声明只有大约 100 个单词，但当每封邮件每分钟都在系统之间循环好几次时，篇幅很快就累积起来了。显然，萨莉的人缘非常好。发给萨莉的邮件太多了，邮件的大小和数量让邮件系统彻底停摆。</p>
-<p>这个故事的寓意是：把你的流程写成文档，并确保流程得到遵循。虽然改名流程已经有文档记录，但它没有被遵循。否则，萨莉在旧邮件服务器上的用户账户本该被更新为她婚后新名字的迁移邮件地址，这个问题也就可以避免了。</p>
-<p>［致 O'Reilly：如果篇幅有问题，可以把标为“新系统”和“旧系统”的两部分放进一张表格，新系统在左，旧系统在右。或者也可以把它们并排放在两栏中。BKD］</p>
+<p>邮件每循环一次，公司的法律免责声明就会被加到邮件末尾一次。免责声明大约只有 100 个单词，但每封邮件每分钟都在两个系统间来回好几次，很快就累积起来了。看来萨莉人缘非常好。发给她的邮件太多，邮件的大小和数量让整个邮件系统停了下来。</p>
+<p>这个故事告诉我们：把流程写下来，并确保大家照着做。改名的流程其实早就写好了，只是没人照做。不然，萨莉在旧邮件服务器上的账户，就会被改成她婚后新名字的迁移地址，这个问题也就不会发生了。</p>
+<p>［致 O'Reilly：如果篇幅有问题，可以把“新系统”和“旧系统”两部分放进一张表格，新系统在左，旧系统在右。或者分成两栏并排放。BKD］</p>
 
 <footer>
 <p class="license">原文：<a href="https://yoshi389111.github.io/kinokobooks/mngr_en/Document_Your_Process_Then_Make_Sure_It_Is_Followed.htm">Document Your Process, Then Make Sure It Is Followed</a>（Monte Davis, MCSE）。本中文译文与原文一样，采用 <a href="https://creativecommons.org/licenses/by/3.0/us/" rel="nofollow">知识共享 署名 3.0 美国（CC BY 3.0 US）</a> 许可协议。</p>
