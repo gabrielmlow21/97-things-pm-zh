@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/style_zh.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>需求规格说明：一个自相矛盾的说法 - 项目经理应该知道的 97 件事</title>
+<meta property="og:title" content="需求规格说明：一个自相矛盾的说法">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://yoshi389111.github.io/kinokobooks/images/mngr97_en.png">
+<meta property="og:site_name" content="项目经理应该知道的 97 件事">
+<meta property="og:locale" content="zh_CN">
+<script type="text/javascript" src="../js/darkmode.js"></script>
+</head>
+<body>
+<article>
+<header>
+<h1>需求规格说明：一个自相矛盾的说法</h1>
+
+<p><b>Alan Greenblatt</b>
+<i>Sudbury, Massachusetts, USA</i></p>
+</header>
+
+<p>好的需求（R）描述的是产品的功能将如何解决特定的现有或潜在问题。好的功能（F），有时也称为功能性，被添加到产品中以解决那些重要的问题。需求由销售人员收集，或由软件项目经理创建。</p>
+<ul>
+<li>我们的产品无法在美国以外销售。（R）我们需要提供国际化和本地化支持。（F）</li>
+<li>用户必须点击 5 个按钮才能完成一项非常简单的任务。他们感到沮丧，始终无法完成任务。我们需要简化用户界面（R），并把完成同样任务所需的按钮点击次数减少到 2 次或更少。（F）</li>
+</ul>
+<p>另一方面，规格说明（S）则准确描述问题将如何解决、需求将如何满足。以上面的例子为例，系统架构师可能会写出以下规格说明：</p>
+<ul>
+<li>我们将提取所有文本字符串，包括弹出消息，并把它们放入外部资源包中。（S）</li>
+<li>将对应用程序进行改进，使屏幕上显示的所有文本都从这些资源包中获取。（S）</li>
+<li>可以通过为所需的语言区域创建特定的资源包来进行本地化。（S）</li>
+<li>点击按钮 1、2 和 3 所实现的功能，将合并为点击按钮 A 一次即可完成。（S）</li>
+<li>现有按钮 4 和 5 的功能将合并到按钮 B 中。（S）</li>
+</ul>
+<p>模糊需求与规格说明之间的界限，会导致错误的人做出决定。结果要么是软件开发人员来决定哪些功能对用户来说是重要的，要么是软件项目经理告诉开发人员该如何组织代码。无论哪种情况，最终的软件产品都会很差。</p>
+<p>开发人员通常不会出去与客户、用户、市场、销售和潜在合作伙伴交流，试图了解哪些新功能最重要。另一方面，软件项目经理通常也不是熟练的开发人员，不了解如何以最佳方式实现某项功能，也不了解自己那些虽出于好意、却未经专业训练的规格建议会如何影响产品的其他方面。每个群体都有自己独特的技能。</p>
+<p>有了好的需求，描述清楚你要解决的问题，以及为什么解决这个特定问题如此重要，程序员在开发过程中就能更加灵活、高效、积极。程序员在处理问题、对其理解得更透彻的过程中，就可以独立做出设计决策。他们应该只受到自己所选用技术的约束，而不应该受到由非程序员制定的严格而脆弱的规格说明的束缚。</p>
+<p>规格说明仍然需要编写，但它们会变化。你是否有过这样的经历：直到产品开发周期结束时，才完全明白这个产品当初应该怎样构建？</p>
+<p>把<i>你要构建什么</i>与<i>如何构建</i>分开。然后，让受过恰当训练的团队成员根据自己在项目中的角色做出决定。</p>
+
+<footer>
+<p class="license">原文：<a href="https://yoshi389111.github.io/kinokobooks/mngr_en/Requirement_Specifications_-_an_Oxymoron.htm">Requirement Specifications: An Oxymoron</a>（Alan Greenblatt）。本中文译文与原文一样，采用 <a href="https://creativecommons.org/licenses/by/3.0/us/" rel="nofollow">知识共享 署名 3.0 美国（CC BY 3.0 US）</a> 许可协议。</p>
+<nav>
+<ul class="nav-links">
+<li><a href="Go_ahead_throw_that_practice_out.htm">« 上一篇</a></li>
+<li><a href="index.html">目录</a></li>
+<li><a href="Success_Is_Always_Measured_In_Business_Value.htm">下一篇 »</a></li>
+</ul>
+</nav>
+</footer>
+</article>
+</body>
+</html>
